@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+}
+
+.running-line {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-family: Merriweather;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+    text-align: left;
+    text-transform: uppercase;
+} 
+
+.title-span {
+    font-family: Merriweather;
+    font-size: 36px;
+    color: #F54932;
+    font-weight: 700;
+    line-height: 48.6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* running-line */
+.running-line {
+    height: 60px;
+    background-color: #F54932;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.text-container {
+    display: flex;
+    white-space: nowrap;
+    position: absolute;
+}
+
+.running-line p {
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 12px;
+}
+
+
+
+
+/* main */
+main {
+    background-color: #E9DED4;
+    mix-blend-mode: exclusion;
+    position: relative;
+    overflow: hidden;
+}
+
+.main__images {
+    position: absolute;
+    z-index: -1;
+    mix-blend-mode: color-burn;
+    top: 0;
+}
+
+.main__chess_pawn {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    left: 91%;
+    z-index: 0;
+}
+
+.main__chess_horse {
+    width: 100%;
+    position: absolute;
+    bottom: -0.5%;
+    left: 60%;
+    z-index: 0;
+}
+
+.main__imgs {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    mix-blend-mode: color-burn;
+    z-index: -1;
+}
+
+.main__imgs img {
+    width: 110%;
+}
+
+.main__collage {
+    position: absolute;
+    width: 1700px;
+    bottom: 0;
+    right: -11%;
+    z-index: -2;
+}
+
+.main__rotate-element {
+    width: 680px;
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    z-index: -3;
+    animation: rotate360 60s linear infinite;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main__logo {
+    width: 245.17px;
+    padding: 26px 0 0 72px;
+    display: flex;
+    z-index: 999;
+}
+
+.main__wrapper {
+    margin: 26px 0 0 72px;
+    width: 542px;
+    z-index: 999;
+}
+
+h1 {
+    padding-left: 2px;
+    font-family: 'Golos';
+    color: #595653;
+    font-size: 16.65px;
+    font-weight: 700;
+    line-height: 17.98px;
+    text-transform: uppercase;
+}
+
+.main__info {
+    padding-top: 62px;
+    padding-bottom: 117px;
+}
+
+.main__info-title {
+    margin-bottom: 24px;
+    font-family: 'Merriweather';
+    color: #313131;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.main__info-title p:nth-child(2) {
+    text-align: center;
+}
+
+.main__info-title p:nth-child(3) {
+    text-align: right;
+}
+
+.main__info-subtitle {
+    margin-bottom: 40px;
+    font-family: 'Golos';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: center;
+}
+
+.main__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__button {
+    width: 263px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 66px;
+    text-decoration: none;
+}
+
+.main__button p {
+    margin: 0;
+    padding: 0 49px;
+    font-family: 'Golos';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: center;
+    transition: 1s;
+}
+
+.main__button:nth-child(1) {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.main__button:nth-child(1):hover {
+    background-color: #FBCE51;
+    color: #1F1F1F;
+}
+
+.main__button:nth-child(2) {
+    color: #1F1F1F;
+    border: 2px solid #1F1F1F;
+}
+
+.main__button:nth-child(2):hover {
+    background-color: #1F1F1F;
+    color: white;
+}
+
+
+/* lection */
+
+.lection {
+    margin: 80px 72px 64px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* about */
+.about {
+    display: flex;
+}
+
+/* footer */
+footer {
+    background-color: #E9DED4;
+}
+
+.footer__text {
+    padding: 40px 72px 72px 72px;
+    font-family: 'Golos';
+    color: #313131;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 60%;
+}
