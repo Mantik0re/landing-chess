@@ -18,7 +18,7 @@ h2 {
     line-height: 48.6px;
     text-align: left;
     text-transform: uppercase;
-} 
+}
 
 .title-span {
     font-family: Merriweather;
@@ -28,6 +28,16 @@ h2 {
     line-height: 48.6px;
     text-align: left;
     text-transform: uppercase;
+}
+
+.subtext {
+    font-family: Golos Text;
+    font-size: 20px;
+    color: #3057A2;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
 }
 
 /* running-line */
@@ -58,9 +68,6 @@ h2 {
     margin: 0;
     padding: 0 12px;
 }
-
-
-
 
 /* main */
 main {
@@ -93,7 +100,7 @@ main {
     z-index: 0;
 }
 
-.main__imgs {
+.main__texture {
     width: 100%;
     position: absolute;
     top: 0;
@@ -101,7 +108,7 @@ main {
     z-index: -1;
 }
 
-.main__imgs img {
+.main__texture img {
     width: 110%;
 }
 
@@ -244,7 +251,68 @@ h1 {
 
 /* about */
 .about {
+    margin: 0 72px 64px 72px;
     display: flex;
+    justify-content: space-between;
+}
+
+.about__image {
+    max-width: 474px;
+    position: relative;
+}
+
+.about__image img {
+    width: 100%;
+    /* position: absolute; */
+} 
+
+.about__text {
+    width: 704px;
+}
+
+.about__text h2 {
+    margin-bottom: 60px;
+}
+
+.table-container {
+    margin-bottom: 60px;
+    border-collapse: collapse;
+    font-family: Golos Text;
+}
+
+table {
+    width: 704px;
+    margin-bottom: 48px;
+    border-collapse: collapse;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+
+tr {
+    border-bottom: 2px solid #D0D0D0;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+
+th {
+    width: 306px;
+    padding: 16px 32px 16px 0;
+    font-weight: 400;
+    border-right: 2px solid #D0D0D0;
+}
+
+td {
+    padding: 16px 0 16px 29px;
+    font-weight: 600;
+}
+
+.crossed-out {
+    font-weight: bold;
+    text-decoration: 2px red line-through;
 }
 
 /* footer */
