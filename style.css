@@ -91,19 +91,16 @@ h3 {
 }
 
 @media (max-width: 800px) {
-
     .running-line {
         height: 50px;
     }
 
     .running-line p {
         font-size: 22px;
-
     }
 }
 
 @media (max-width: 400px) {
-
     .running-line {
         height: 38px;
     }
@@ -129,23 +126,32 @@ main {
 }
 
 .main__chess_pawn {
-    width: 100%;
+    width: 82.61px;
     position: absolute;
     bottom: 2%;
     left: 91%;
     z-index: 0;
 }
 
-.main__chess_horse {
+.main__chess_pawn img{
     width: 100%;
+}
+
+.main__chess_horse {
+    width: 153.87px;
     position: absolute;
     bottom: -0.5%;
     left: 60%;
     z-index: 0;
 }
 
-.main__texture {
+.main__chess_horse img{
     width: 100%;
+}
+
+.main__texture {
+    min-width: 1500px;
+    min-height: 900px;
     position: absolute;
     top: 0;
     mix-blend-mode: color-burn;
@@ -153,12 +159,16 @@ main {
 }
 
 .main__texture img {
-    width: 110%;
+    width: 100%;
+    height: 1400px;
 }
 
 .main__collage {
+    position: static;
+}
+
+.main__collage img{
     position: absolute;
-    width: 1700px;
     bottom: 0;
     right: -11%;
     z-index: -2;
@@ -185,7 +195,7 @@ main {
 
 .main__logo {
     width: 245.17px;
-    padding: 26px 0 0 72px;
+    margin: 26px 0 0 72px;
     display: flex;
     z-index: 999;
 }
@@ -281,6 +291,98 @@ h1 {
 .main__button:nth-child(2):hover {
     background-color: #1F1F1F;
     color: white;
+}
+
+@media (max-width: 1250px) {
+    .main__texture {
+        min-height: 1900px;
+    }
+
+    .main__button:nth-child(2) {
+        background-color: white;
+        opacity: 0.9;
+        border: none;
+    }
+
+    .main__collage{
+        height: 200px;
+    }
+
+    .main__rotate-element {
+        top: 15%;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .main__collage{
+        height: 400px;
+    }
+    
+    .main__rotate-element {
+        top: 35%;
+    }
+}
+
+@media (max-width: 650px) {
+    .main__logo {
+        margin: 26px 0 0 20px;
+    }
+
+    .main__wrapper {
+        margin: 0 0 0 20px;
+    }
+
+    .main__info-title {
+        width: 335px;
+        font-size: 36px;
+    }
+
+    .main__info-subtitle {
+        width: 335px;
+        font-size: 18px;
+    }
+
+    .main__buttons {
+        display: block;
+    }
+
+    .main__button {
+        width: 335px;
+        height: 47px;
+    }
+
+    .main__button p {
+        padding: 0 43px;
+    }
+
+    .main__button:nth-child(1) {
+        margin-bottom: 14px;
+    }
+
+    .main__collage{
+        height: 170px;
+    }
+
+    .main__collage img{
+        width: 874.73px;
+    }
+
+    .main__rotate-element {
+        width: 297.47px;
+        top: 53%;
+        right: 0%;
+    }
+
+    .main__chess_pawn {
+        display: none;
+    }
+    
+    .main__chess_horse {
+        width: 76.71px;
+        right: 50%;
+        left: 50%;
+    }
 }
 
 
