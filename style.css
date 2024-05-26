@@ -133,7 +133,7 @@ main {
     z-index: 0;
 }
 
-.main__chess_pawn img{
+.main__chess_pawn img {
     width: 100%;
 }
 
@@ -145,7 +145,7 @@ main {
     z-index: 0;
 }
 
-.main__chess_horse img{
+.main__chess_horse img {
     width: 100%;
 }
 
@@ -167,7 +167,7 @@ main {
     position: static;
 }
 
-.main__collage img{
+.main__collage img {
     position: absolute;
     bottom: 0;
     right: -11%;
@@ -195,7 +195,7 @@ main {
 
 .main__logo {
     width: 245.17px;
-    margin: 26px 0 0 72px;
+    margin: 18px 0 0 72px;
     display: flex;
     z-index: 999;
 }
@@ -304,7 +304,7 @@ h1 {
         border: none;
     }
 
-    .main__collage{
+    .main__collage {
         height: 200px;
     }
 
@@ -315,22 +315,35 @@ h1 {
 
 
 @media (max-width: 1100px) {
-    .main__collage{
+    .main__collage {
         height: 400px;
     }
-    
+
     .main__rotate-element {
         top: 35%;
     }
 }
 
 @media (max-width: 650px) {
+    h1 {
+        font-size: 14.42px;
+        line-height: 15.57px;
+    }
+
     .main__logo {
         margin: 26px 0 0 20px;
     }
 
+    .main__logo-img img {
+        width: 79.5px;
+    }
+
     .main__wrapper {
         margin: 0 0 0 20px;
+    }
+
+    .main__info {
+        padding-top: 40px;
     }
 
     .main__info-title {
@@ -360,11 +373,11 @@ h1 {
         margin-bottom: 14px;
     }
 
-    .main__collage{
+    .main__collage {
         height: 170px;
     }
 
-    .main__collage img{
+    .main__collage img {
         width: 874.73px;
     }
 
@@ -377,7 +390,7 @@ h1 {
     .main__chess_pawn {
         display: none;
     }
-    
+
     .main__chess_horse {
         width: 76.71px;
         right: 50%;
@@ -508,7 +521,8 @@ td {
     line-height: 24px;
     text-align: left;
     gap: 16px;
-    flex-wrap: nowrap; /* предотвращает перенос на новую строку */
+    flex-wrap: nowrap;
+    /* предотвращает перенос на новую строку */
 }
 
 .stages__block::before {
@@ -545,7 +559,7 @@ td {
 }
 
 .stages__block__num {
-    min-width: 36px; 
+    min-width: 36px;
     min-height: 36px;
     background-color: white;
     display: flex;
@@ -715,5 +729,3 @@ footer {
         padding: 40px 20px 60px 20px;
     }
 }
-
-
