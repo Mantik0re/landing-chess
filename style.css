@@ -383,6 +383,7 @@ td {
     line-height: 24px;
     text-align: left;
     gap: 16px;
+    flex-wrap: nowrap; /* предотвращает перенос на новую строку */
 }
 
 .stages__block::before {
@@ -419,14 +420,147 @@ td {
 }
 
 .stages__block__num {
-    width: 36px; 
-    height: 36px;
+    min-width: 36px; 
+    min-height: 36px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 60px;
 }
+
+/* players */
+#members {
+    padding-bottom: 140px;
+}
+
+.player {
+    padding: 0 72px 0 72px;
+}
+
+.player__wripper {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.player-title-container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+}
+
+ul .slides {
+    padding: 0 !important;
+}
+
+.slides {
+    display: flex;
+    /* width: 100%; */
+    transition: transform 0.5s ease-in;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.slide {
+    /* flex: 0 0 33.33%; */
+    width: 394px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+/* .slide:not(:last-child) {
+    padding-right: 20px;
+} */
+
+.navigation {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center
+}
+
+
+.left,
+.right,
+.left-stage,
+.right-stage {
+    width: 44px;
+    height: 44px;
+    background-color: #313131;
+    border-radius: 40px;
+}
+
+.left:hover,
+.right:hover,
+.left-stage:hover,
+.right-stage:hover {
+    background-color: #FBCE51;
+}
+
+#total-slides {
+    margin-right: 20px;
+    opacity: 60%;
+}
+
+.slides-num {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+/*слайды*/
+
+
+.left {
+    margin-right: 17px;
+}
+
+.player-avatar {
+    object-fit: none;
+    margin-bottom: 28px;
+}
+
+.player-name {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #313131;
+}
+
+.player-descr {
+    margin-bottom: 20px;
+    color: #313131;
+    opacity: 0.6;
+}
+
+.player-btn {
+    width: 113px;
+    height: 35px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #3057A2;
+}
+
+.player-btn:hover {
+    color: #FFFFFF;
+    background-color: #3057A2;
+}
+
 
 
 /* footer */
